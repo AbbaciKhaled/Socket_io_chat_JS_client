@@ -1,0 +1,28 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <div>
+        <ul id="messages"></ul>
+    </div>
+
+    <div>
+        <h2>Client 1</h2>
+        <select id="receiver_id" onchange="changeReceiver()">
+            <option value="2">Client 2</option>
+            <option value="3">Client 3</option>
+        </select>
+        <input id="message" type="text" />
+        <button onclick="handleSubmitNewMessage()">Submit</button>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js"></script>
+    <script src="./socket-client-1.js"></script>
+</body>
+
+</html>
